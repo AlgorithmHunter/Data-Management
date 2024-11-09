@@ -1,0 +1,237 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    
+                   
+                    >
+  
+
+
+    <Style TargetType="TextBlock">
+       
+    
+        <Setter Property="FontSize" Value="17"/>
+    </Style>
+    <Style x:Key="GridCellTextblock"  TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment" Value="Left" />
+
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="Padding"  Value="5,14,5,14" />
+        <Style.Triggers>
+
+
+            <Trigger Property="IsMouseOver" Value="True">
+                <Trigger.Setters>
+                    <Setter  Property="Background">
+                        <Setter.Value>
+                            <SolidColorBrush Color="Transparent"  />
+                        </Setter.Value>
+
+                    </Setter>
+                 
+                </Trigger.Setters>
+            </Trigger>
+
+
+
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="GridCellClickableTextblock"  TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="Foreground"  Value="Indigo" />
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="Padding"  Value="8,14,7,14" />
+        <Style.Triggers>
+
+
+            <Trigger Property="IsMouseOver" Value="True">
+                <Trigger.Setters>
+                    <Setter  Property="Foreground">
+                        <Setter.Value>
+                            <SolidColorBrush Color="DodgerBlue"  />
+                        </Setter.Value>
+
+                    </Setter>
+
+                </Trigger.Setters>
+            </Trigger>
+
+
+
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="gridTextBox"  TargetType="TextBox">
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="FontFamily" Value="Ariel"/>
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Margin" Value="0,0,4,0" />
+        <Setter Property="Padding" Value="5,5,5,5" />
+
+    </Style>
+    <Style x:Key="GridTextBlock" TargetType="TextBlock">
+        <Setter Property="VerticalAlignment"  Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+  
+        <Setter Property="FontSize" Value="17"/>
+        <Setter Property="Padding" Value="5,5,5,5" />
+    </Style>
+    <Style x:Key="GridTextBlockHead" TargetType="TextBlock">
+        <Setter Property="VerticalAlignment"  Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="TextAlignment"  Value="Center"/>
+ 
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontWeight" Value="DemiBold" />
+        
+           
+      
+    </Style>
+ 
+    <Style x:Key="Gridrowseperater" TargetType="RowDefinition">
+        <Setter  Property="Height" Value="6" ></Setter>
+        </Style>
+    <Style TargetType="GridViewColumnHeader">
+        <Setter Property="Padding"  Value="15,18,10,10" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="Background" Value="AliceBlue"  />
+        <Setter Property="Template">
+            <Setter.Value>
+
+                <ControlTemplate TargetType="GridViewColumnHeader">
+
+                    <TextBlock   Text="{TemplateBinding  Content}" Background="#FF3F51B5" FontWeight="Bold"  Foreground="WhiteSmoke"  HorizontalAlignment="Stretch" Padding="12" Width="{TemplateBinding Width}"  />
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding  Name}"   Value="Sortable"      >
+                <DataTrigger.Setters>
+                    
+               
+                <Setter Property="Template">
+                    <Setter.Value>
+
+                        <ControlTemplate TargetType="GridViewColumnHeader">
+
+                            <TextBlock   TextDecorations="Underline" Text="{TemplateBinding  Content}" Background="DarkRed" FontWeight="Bold"  Foreground="WhiteSmoke"  HorizontalAlignment="Stretch" Padding="12" Width="{TemplateBinding Width}"  />
+
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                </DataTrigger.Setters>
+            </DataTrigger>
+           
+        </Style.Triggers>
+    
+    </Style>
+    <Style x:Key="firtheadercolumn" TargetType="GridViewColumnHeader">
+        <Setter Property="Padding"  Value="15,18,10,10" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="Background" Value="AliceBlue"  />
+        <Setter Property="Template">
+            <Setter.Value>
+
+                <ControlTemplate TargetType="GridViewColumnHeader">
+
+                    <TextBlock  TextDecorations="Underline" Text="{TemplateBinding  Content}" Background="#FF3F51B5" FontWeight="Bold"  Foreground="WhiteSmoke"  HorizontalAlignment="Stretch" Padding="12" Width="{TemplateBinding Width}"  />
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding  Name}"   Value="Sortable"      >
+                <DataTrigger.Setters>
+
+
+                    <Setter Property="Template">
+                        <Setter.Value>
+
+                            <ControlTemplate TargetType="GridViewColumnHeader">
+
+                                <TextBlock   TextDecorations="Underline" Text="{TemplateBinding  Content}" Background="DarkRed" FontWeight="Bold"  Foreground="WhiteSmoke"  HorizontalAlignment="Stretch" Padding="12" Width="{TemplateBinding Width}"  />
+
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger.Setters>
+            </DataTrigger>
+
+        </Style.Triggers>
+
+    </Style>
+    <Style TargetType="DataGridCell">
+        <Setter Property="FontWeight"  Value="ExtraBold" />
+    </Style>
+    <Style  TargetType="ListViewItem">
+
+       
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="Indigo" Opacity="0.1" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Foreground" Value="DimGray" />
+        <Setter Property="Template" >
+            <Setter.Value>
+                <ControlTemplate TargetType="ListViewItem" >
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}">
+                        
+                    
+                    <GridViewRowPresenter />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+
+
+            <Trigger Property="IsMouseOver" Value="True">
+                <Trigger.Setters>
+                    <Setter  Property="Background" >
+                        <Setter.Value>
+                            <SolidColorBrush Color="DimGray" Opacity="0.2" />
+                        </Setter.Value>
+                        
+                    </Setter>
+                    <Setter Property="BorderBrush">
+                        <Setter.Value>
+                            <SolidColorBrush Color="DarkGray" Opacity="0.0" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger.Setters>
+            </Trigger>
+            <Trigger Property="IsSelected"  Value="True">
+                <Trigger.Setters>
+                    <Setter  Property="Background" >
+                        <Setter.Value>
+                            <SolidColorBrush Color="DimGray" Opacity="0.2" />
+                        </Setter.Value>
+
+                    </Setter>
+                    <Setter Property="BorderBrush">
+                        <Setter.Value>
+                            <SolidColorBrush Color="DarkGray" Opacity="0.0" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger.Setters>
+            </Trigger>
+
+        </Style.Triggers>
+     
+
+
+    </Style>
+    
+    <Style TargetType="MenuItem">
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="HorizontalAlignment" Value="Left"  />
+    </Style>
+    <Style x:Key="buttonstyle" TargetType="Button" >
+        <Setter Property="Foreground" Value="WhiteSmoke" />
+    </Style>
+    
+</ResourceDictionary>

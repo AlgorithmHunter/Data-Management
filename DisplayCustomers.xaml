@@ -1,0 +1,82 @@
+﻿<Page x:Class="WpfApp1.DisplayCustomers"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DisplayCustomers" >
+   
+    <Grid>
+        <Grid x:Name="DisplayGrid" >
+            <ListView  x:Name="CustomerList"   >
+              
+                <ListView.View x:Uid="headers"  >
+               
+                <GridView    >
+                        <GridViewColumn>
+                            <GridViewColumn.Header>
+                                <GridViewColumnHeader Content="ID"  MinWidth="40"  Style="{StaticResource firtheadercolumn}"   x:Name="Sortable"  MouseLeftButtonDown="SortByID"  />
+                            </GridViewColumn.Header>
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Id}"     Style="{StaticResource GridCellClickableTextblock}" TouchDown="IdTouched" MouseLeftButtonDown="IdMouseLeftDown" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Name"  >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Name}" Style="{StaticResource GridCellTextblock}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Surname"    >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Lastname}" Style="{StaticResource GridCellTextblock}"  />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Cellphone"    >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Cellphone}" Style="{StaticResource GridCellTextblock}"  />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Country"    >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=Country}" Style="{StaticResource GridCellTextblock}"  />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Total Spend"   >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=CustomerTotalSpend}" Style="{StaticResource GridCellTextblock}"  />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="LastPurchased"    >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=LastPurchaseDate}" Style="{StaticResource GridCellTextblock}"  />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Delete" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image  Tag="{Binding Path=Id}"  Width="16" Height="16" Margin="25,0,0,0" HorizontalAlignment="Center" Source="Resources/Icons/Delete.png" Stretch="Fill"  MouseLeftButtonDown="deleteClicked" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Grid>
+</Page>

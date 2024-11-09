@@ -1,0 +1,71 @@
+﻿<Window x:Class="WpfApp1.AddEntryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        
+          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+       Height="370" Width="400">
+    <Window.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="Indigo" SecondaryColor="Lime" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml" />
+
+
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+
+
+
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="133*"/>
+            <ColumnDefinition Width="267*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36"/>
+            <RowDefinition  Style="{StaticResource   Gridrowseperater}" />
+            <RowDefinition Height="36"/>
+            <RowDefinition  Style="{StaticResource   Gridrowseperater}" />
+            <RowDefinition Height="36"/>
+            <RowDefinition  Style="{StaticResource   Gridrowseperater}" />
+            <RowDefinition Height="36"/>
+            <RowDefinition  Style="{StaticResource   Gridrowseperater}" />
+            <RowDefinition Height="36"/>
+            <RowDefinition  Style="{StaticResource   Gridrowseperater}" />
+            <RowDefinition Height="36"/>
+            <RowDefinition  Style="{StaticResource   Gridrowseperater}" />
+            <RowDefinition Height="36"/>
+            <RowDefinition  Style="{StaticResource   Gridrowseperater}" />
+            <RowDefinition Height="38"/>
+        </Grid.RowDefinitions>
+        <Grid  Grid.RowSpan="1" Grid.ColumnSpan="2"  >
+            <Grid.Background>
+                <SolidColorBrush Color="#FF3F51B5" />
+            </Grid.Background>
+            <TextBlock  Grid.Row="0" TextWrapping="Wrap"  Text="MODIFY CUSTOMER DATA" Style="{StaticResource  GridTextBlockHead}" Foreground="#FFFFEEEE"/>
+        </Grid>
+
+
+        <TextBlock  Grid.Row="2" TextWrapping="Wrap" Text="Name:" Style="{StaticResource  GridTextBlock}"/>
+        <TextBlock  Grid.Row="4" TextWrapping="Wrap" Text="Surname:" Style="{StaticResource  GridTextBlock}"/>
+        <TextBlock  Grid.Row="6" TextWrapping="Wrap" Text="Cellphone:" Style="{StaticResource  GridTextBlock}"/>
+        <TextBlock  Grid.Row="8" TextWrapping="Wrap" Text="Country:" Style="{StaticResource  GridTextBlock}" />
+        <TextBlock TextWrapping="Wrap" Text="Last Purchase:"  Grid.Row="12" Style="{StaticResource  GridTextBlock}" />
+        <TextBlock Grid.Row="10" TextWrapping="Wrap" Text="Total Spend:"   Style="{StaticResource  GridTextBlock}" />
+        <TextBox x:Name="txtName" Grid.Column="1" Style="{StaticResource gridTextBox}"  Text="Diana" AutoWordSelection="True"   Grid.Row="2" BorderBrush="#661E1E21"   />
+        <TextBox Grid.Column="1" x:Name="txtSurname" Style="{StaticResource gridTextBox}" Text="Jones"    AutoWordSelection="True"  Grid.Row="4"    />
+        <TextBox Style="{StaticResource gridTextBox}"   x:Name="txtCellphone"  Text="0000-0000-0000"  AutoWordSelection="True"   Grid.Row="6" Grid.Column="1" />
+        <TextBox  Style="{StaticResource gridTextBox}" x:Name="txtCountry" Text="Greece" AutoWordSelection="True"  Grid.Row="8" Grid.Column="1" />
+        <TextBox Style="{StaticResource gridTextBox}"   x:Name="txtTotalSpend" Text="2000"  Grid.Row="10" Grid.Column="1" />
+
+        <Button Content="Add"   HorizontalAlignment="Stretch" x:Name="cmdSubmit" Margin="4,0,4,4" VerticalAlignment="Stretch"  Grid.Row="14" Grid.ColumnSpan="2" Click="cmdSubmit_Click"/>
+        <DatePicker Grid.Column="1" x:Name="dPickerLastPurchased"  FontSize="15" SelectedDate="2025-01-01" Margin="0,0,4,0" FontFamily="Ariel"  HorizontalAlignment="Stretch" Grid.Row="12" VerticalAlignment="Stretch"/>
+    </Grid>
+</Window>
