@@ -50,14 +50,10 @@ Material Themes/Icons
 
 Sample Usage:
 
-View sample image1 here https://bsite.net/experimental/git/Screenshot_2024_11_07-1.png
-View sample image2 here https://bsite.net/experimental/git/Screenshot_2024_11_07-2.png
+![alt 'Display Customer Data'](https://github.com/AlgorithmHunter/Data-Management/tree/master/Data/git/readme/images/Screenshot_2024_11_07-1.png)
+
+![alt 'Add/Update Customer Entry'](https://github.com/AlgorithmHunter/Data-Management/tree/master/Data/git/readme/images/Screenshot_2024_11_07-2.png)
 View sample video here https://bsite.net/experimental/git/Video_2024_11_07-1.webm
-
-![alt 'Display Customer Data'](https://bsite.net/experimental/git/Screenshot_2024_11_07-1.png)
-
-![alt 'Add/Update Customer Entry'](https://bsite.net/experimental/git/Screenshot_2024_11_07-2.png)
-
 <video  controls>
   <source src="https://bsite.net/experimental/git/Video_2024_11_07-1.webm" type="video/mp4">
   Your browser does not support the video tag.
