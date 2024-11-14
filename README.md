@@ -50,14 +50,15 @@ Material Themes/Icons
 
 Sample Usage:
 
-![alt 'Display Customer Data'](http://Chinks1991.FreeASPHost.net/Screenshot_2024_11_07-1.png)
+![alt 'Display Customer Data'](https://bsite.net/experimental/git/Screenshot_2024_11_07-1.png)
 
-![alt 'Add/Update Customer Entry'](http://Chinks1991.FreeASPHost.net/Screenshot_2024_11_07-2.png)
+![alt 'Add/Update Customer Entry'](https://bsite.net/experimental/git/Screenshot_2024_11_07-2.png)
 
 <video  controls>
-  <source src="http://Chinks1991.FreeASPHost.net/Video_2024_11_07-1.webm" type="video/mp4">
+  <source src="https://bsite.net/experimental/git/Video_2024_11_07-1.webm" type="video/mp4">
   Your browser does not support the video tag.
 </video> 1 
 
 
-NOTE: This application was made for demonstration purposes if you want application like this that meets your business needs you can contact me
+NOTE: This application was made for demonstration purposes if you want application like this that meets your business needs you can contact me//
+
