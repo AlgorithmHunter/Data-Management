@@ -53,6 +53,8 @@ Sample Usage:
 ![alt 'Display Customer Data'](https://github.com/AlgorithmHunter/Data-Management/tree/master/Data/git/readme/images/Screenshot_2024_11_07-1.png?raw=true)
 
 ![alt 'Add/Update Customer Entry'](https://github.com/AlgorithmHunter/Data-Management/tree/master/Data/git/readme/images/Screenshot_2024_11_07-2.png?raw=true)
+
+
 View sample video here https://bsite.net/experimental/git/Video_2024_11_07-1.webm
 <video  controls>
   <source src="https://bsite.net/experimental/git/Video_2024_11_07-1.webm" type="video/mp4">
