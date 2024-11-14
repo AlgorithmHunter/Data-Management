@@ -50,6 +50,10 @@ Material Themes/Icons
 
 Sample Usage:
 
+View sample image1 here https://bsite.net/experimental/git/Screenshot_2024_11_07-1.png
+View sample image2 here https://bsite.net/experimental/git/Screenshot_2024_11_07-2.png
+View sample video here https://bsite.net/experimental/git/Video_2024_11_07-1.webm
+
 ![alt 'Display Customer Data'](https://bsite.net/experimental/git/Screenshot_2024_11_07-1.png)
 
 ![alt 'Add/Update Customer Entry'](https://bsite.net/experimental/git/Screenshot_2024_11_07-2.png)
