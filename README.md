@@ -54,12 +54,29 @@ Sample Usage:
 
 ![alt 'Add/Update Customer Entry'](https://bsite.net/experimental/git/Screenshot_2024_11_07-2.png?raw=true)
 
-https://bsite.net/experimental/git/Video_2024_11_07-1.webm
+
+
+View/Edit Data
+
+
+https://github.com/user-attachments/assets/ac08cac9-e341-4842-bc70-c7a0178de6c8
+
+
+
+Add Data
+
+
+https://github.com/user-attachments/assets/2cb424de-f1a2-467a-ab99-1d271988efa6
+
+
+Export/Import Data
+
+
+https://github.com/user-attachments/assets/5fd9400f-b260-4947-be68-295bb0d25c2a
+
+
 View sample video here https://bsite.net/experimental/git/Video_2024_11_07-1.webm
-<video  controls>
-  <source src="https://bsite.net/experimental/git/Video_2024_11_07-1.webm" type="video/mp4">
-  Your browser does not support the video tag.
-</video> 1 
+
 
 
 NOTE: This application was made for demonstration purposes if you want application like this that meets your business needs you can contact me//
