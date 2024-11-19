@@ -75,6 +75,11 @@ Export/Import Data
 https://github.com/user-attachments/assets/5fd9400f-b260-4947-be68-295bb0d25c2a
 
 
+Application Installer & Executable 'Files' Links
+-------------------------------------------------
+
+https://github.com/AlgorithmHunter/AppExecutables/DataManagement-EXE.zip
+https://github.com/AlgorithmHunter/AppExecutables/DataManagementApp-Installer.zip
 
 NOTE: This application was made for demonstration purposes if you want application like this that meets your business needs you can contact me//
 
