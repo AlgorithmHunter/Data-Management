@@ -75,9 +75,6 @@ Export/Import Data
 https://github.com/user-attachments/assets/5fd9400f-b260-4947-be68-295bb0d25c2a
 
 
-View sample video here https://bsite.net/experimental/git/Video_2024_11_07-1.webm
-
-
 
 NOTE: This application was made for demonstration purposes if you want application like this that meets your business needs you can contact me//
 
